@@ -1,4 +1,4 @@
-package com.example.mothman;
+package com.example.mothman.Models;
 
 public class Sensor {
     private String type;
