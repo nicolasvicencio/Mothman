@@ -9,33 +9,28 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.example.mothman.Controllers.SensorController;
+
+import java.util.ArrayList;
+
 public class ListData extends AppCompatActivity {
-    private ListView lvData;
+    private ListView sensorList;
+    private ArrayList<String> sensors;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_data);
+
+        SensorController.fillSensorList();
+        sensorList = (ListView) findViewById(R.id.listViewData);
     }
 
-
-//    class  AdaptaderData extends ArrayAdapter<Sensor>{
-//        AppCompatActivity appCompatActivity;
-//
-//        public AdapterData(AppCompatActivity context){
-//            super(context, R.layout.);
-//            appCompatActivity = context;
-//        }
-//
-//        public void getView(int position, View v, ViewGroup parent){
-//            LayoutInflater inflater = appCompatActivity.getLayoutInflater();
-//            View item = inflater.inflate(R.layout.)
-//        }
-//
-//
-//    }
-
-
-
+    
 
 }
+
+
+
+
+

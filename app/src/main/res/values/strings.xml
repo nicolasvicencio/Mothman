@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Mothman</string>
+    <string name="sensores">Sensores</string>
+    <string name="sensoresTitle">Sensores</string>
 </resources>
