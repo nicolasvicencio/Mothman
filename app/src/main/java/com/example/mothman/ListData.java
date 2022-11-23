@@ -36,15 +36,13 @@ public class ListData extends AppCompatActivity {
         sensorList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                detalleSensor(view);
-
-                Toast.makeText(ListData.this, "Sensor: "+SensorController.findAll().get(i).getName(), Toast.LENGTH_SHORT);
+                sensorDetail(view);
             }
         });
     }
-
-    public void detalleSensor(View v) {
+    public void sensorDetail(View v) {
         Intent i = new Intent(this, Login.class);
+        startActivity(i);
     }
 
     class AdapterSensor extends ArrayAdapter<Sensor>{

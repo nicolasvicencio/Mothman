@@ -23,8 +23,8 @@ public class SensorController {
     }
     
     public static void fillSensorList(){
-        addSensor("DHT22", "Sensor de T y Humedad", "Dato de prueba");
-        addSensor("Inclinacion", "Sensor de inclinacion", "Dato de prueba");
-        addSensor("CO2", "Sensor de CO2", "Dato de prueba");
+        addSensor("DHT22", "Sensor de Tº y Humedad", "28º");
+        addSensor("Inclinacion", "Sensor de inclinacion", "0º");
+        addSensor("CO2", "Sensor de CO2", "400 ppm");
     }
 }
