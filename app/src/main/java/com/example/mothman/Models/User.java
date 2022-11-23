@@ -1,11 +1,11 @@
 package com.example.mothman.Models;
 
-public class Usuario {
+public class User {
     private String username;
     private String password;
 
 
-    public Usuario(String username, String password) {
+    public User(String username, String password) {
         this.username = username;
         this.password = password;
     }
