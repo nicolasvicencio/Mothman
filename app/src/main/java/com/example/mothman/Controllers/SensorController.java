@@ -1,5 +1,7 @@
 package com.example.mothman.Controllers;
 
+import android.util.Log;
+
 import com.example.mothman.Models.Sensor;
 
 import java.util.ArrayList;
@@ -8,6 +10,7 @@ public class SensorController {
     private static ArrayList<Sensor> listSensor = new ArrayList<>();
 
     public static String addSensor(String type, String name,  String output){
+        if(listSensor.size() == 3) {return "";}
         try{
             Sensor sensor = new Sensor(type, name ,output);
             listSensor.add(sensor);
