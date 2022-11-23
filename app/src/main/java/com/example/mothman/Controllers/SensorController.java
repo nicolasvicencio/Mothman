@@ -27,10 +27,4 @@ public class SensorController {
         addSensor("Inclinacion", "Sensor de inclinacion", "Dato de prueba");
         addSensor("CO2", "Sensor de CO2", "Dato de prueba");
     }
-    
-
-    
-    
-
-
 }
