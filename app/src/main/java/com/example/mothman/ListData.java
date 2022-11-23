@@ -33,8 +33,6 @@ public class ListData extends AppCompatActivity {
         sensorList = (ListView) findViewById(R.id.listViewData);
         sensorList.setAdapter(adapter);
 
-
-
         sensorList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
