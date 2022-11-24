@@ -41,7 +41,7 @@ public class ListData extends AppCompatActivity {
         });
     }
     public void sensorDetail(View v) {
-        Intent i = new Intent(this, Login.class);
+        Intent i = new Intent(this, Details.class);
         startActivity(i);
     }
 
