@@ -33,15 +33,25 @@ public class ListData extends AppCompatActivity {
         sensorList = (ListView) findViewById(R.id.listViewData);
         sensorList.setAdapter(adapter);
 
+
+
         sensorList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                sensorDetail(view);
+                String type = SensorController.findAll().get(i).getType();
+                String name = SensorController.findAll().get(i).getName();
+                String output = SensorController.findAll().get(i).getOutput();
+
+                sensorDetail(view, type, name, output);
             }
         });
     }
-    public void sensorDetail(View v) {
+    public void sensorDetail(View v, String type, String name, String output) {
         Intent i = new Intent(this, Details.class);
+        i.putExtra("type", type);
+        i.putExtra("name", name);
+        i.putExtra("output", output);
+
         startActivity(i);
     }
 
