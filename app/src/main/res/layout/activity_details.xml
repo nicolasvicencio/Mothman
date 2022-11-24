@@ -8,8 +8,9 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="423dp"
-        android:layout_height="143dp"
+        android:layout_width="285dp"
+        android:layout_height="116dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo" />
@@ -46,72 +47,42 @@
         app:layout_constraintTop_toBottomOf="@+id/textView17" />
 
     <TextView
-        android:id="@+id/textView21"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="274dp"
-        android:layout_marginTop="195dp"
-        android:text="2100 ppm"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
-
-    <TextView
-        android:id="@+id/textView22"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="273dp"
-        android:layout_marginTop="19dp"
-        android:text="1600 ppm"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView21" />
-
-    <TextView
         android:id="@+id/textView23"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="274dp"
-        android:layout_marginTop="41dp"
+        android:layout_marginStart="328dp"
+        android:layout_marginTop="44dp"
         android:text="1500 ppm"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView22" />
 
     <TextView
-        android:id="@+id/textView24"
+        android:id="@+id/textView29"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="26dp"
-        android:layout_marginTop="20dp"
-        android:text="1100 ppm "
-        app:layout_constraintStart_toEndOf="@+id/textView28"
-        app:layout_constraintTop_toBottomOf="@+id/textView23" />
-
-    <TextView
-        android:id="@+id/textView25"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="276dp"
-        android:layout_marginTop="35dp"
-        android:text="1000 ppm"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="76dp"
+        android:text="Riesgo bajo  de co2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView24" />
+        app:layout_constraintTop_toBottomOf="@+id/textView28" />
 
     <TextView
-        android:id="@+id/textView26"
+        android:id="@+id/textView22"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="273dp"
-        android:layout_marginTop="24dp"
-        android:text="400 ppm"
+        android:layout_marginStart="328dp"
+        android:layout_marginTop="16dp"
+        android:text="1600 ppm"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
 
     <TextView
-        android:id="@+id/textView27"
+        android:id="@+id/textView21"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="116dp"
-        android:layout_marginTop="214dp"
-        android:text="Riesgo alto de c02"
+        android:layout_marginStart="328dp"
+        android:layout_marginTop="188dp"
+        android:text="2100 ppm"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
@@ -119,19 +90,58 @@
         android:id="@+id/textView28"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="117dp"
-        android:layout_marginTop="85dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="88dp"
         android:text="Riesgo medio de co2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView27" />
 
     <TextView
-        android:id="@+id/textView29"
+        android:id="@+id/textView26"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="120dp"
-        android:layout_marginTop="75dp"
-        android:text="Riesgo bajo  de co2"
+        android:layout_marginStart="328dp"
+        android:layout_marginTop="16dp"
+        android:text="400 ppm"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView28" />
+        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="328dp"
+        android:layout_marginTop="28dp"
+        android:text="1000 ppm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="204dp"
+        android:text="Riesgo alto de c02"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="1100 ppm "
+        app:layout_constraintStart_toEndOf="@+id/textView28"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="142dp"
+        android:layout_height="176dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/imagen_2022_11_23_220244404_removebg_preview" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
