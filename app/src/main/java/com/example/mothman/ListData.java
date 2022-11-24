@@ -48,9 +48,9 @@ public class ListData extends AppCompatActivity {
     }
     public void sensorDetail(View v, String type, String name, String output) {
         Intent i = new Intent(this, Details.class);
-        i.putExtra("type", type);
-        i.putExtra("name", name);
-        i.putExtra("output", output);
+        i.putExtra("sensorName", type);
+        i.putExtra("sensorType", name);
+        i.putExtra("sensorOutput", output);
 
         startActivity(i);
     }
