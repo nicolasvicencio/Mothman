@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "559505141358",
+    "project_id": "mothman-4efa0",
+    "storage_bucket": "mothman-4efa0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:559505141358:android:0da2f70ea575633b8c407f",
+        "android_client_info": {
+          "package_name": "com.example.mothman"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "559505141358-d208jt7jtp73bfkgagih4f4buj2ufdv0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2Fn2mMEJv4ZIDyw6CpRqlViyXTRn77RM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "559505141358-d208jt7jtp73bfkgagih4f4buj2ufdv0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
