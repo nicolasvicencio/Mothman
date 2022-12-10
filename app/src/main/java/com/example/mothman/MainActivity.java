@@ -8,21 +8,24 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.mothman.Services.FBConnection;
+
 public class MainActivity extends AppCompatActivity {
 
     private EditText etUsuario;
     private EditText etContrasena;
+    private FBConnection fbConnection;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        fbConnection.startFirebase(this);
         etUsuario = findViewById(R.id.etUsuario);
         etContrasena = findViewById(R.id.etContrasena);
     }
 
     public void enviar(View v){
-
         if ("root".equals(etUsuario.getText().toString()) && "root".equals(etContrasena.getText().toString())) {
             Intent i = new Intent(this, ListData.class);
 
