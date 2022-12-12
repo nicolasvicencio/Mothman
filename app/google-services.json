@@ -1,33 +1,42 @@
 {
   "project_info": {
-    "project_number": "559505141358",
-    "project_id": "mothman-4efa0",
-    "storage_bucket": "mothman-4efa0.appspot.com"
+    "project_number": "617825253260",
+    "firebase_url": "https://mothman-570f0-default-rtdb.firebaseio.com",
+    "project_id": "mothman-570f0",
+    "storage_bucket": "mothman-570f0.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:559505141358:android:0da2f70ea575633b8c407f",
+        "mobilesdk_app_id": "1:617825253260:android:b2d8cadf8beead821088a9",
         "android_client_info": {
           "package_name": "com.example.mothman"
         }
       },
       "oauth_client": [
         {
-          "client_id": "559505141358-d208jt7jtp73bfkgagih4f4buj2ufdv0.apps.googleusercontent.com",
+          "client_id": "617825253260-s6dmjt889esj86i45gcd3dquer5h6mfl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mothman",
+            "certificate_hash": "674545b15c78a22785ca9216132dc1da95ffcd03"
+          }
+        },
+        {
+          "client_id": "617825253260-qvkp2bbg8q6uibb8aou8k336q2h2u4a9.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyA2Fn2mMEJv4ZIDyw6CpRqlViyXTRn77RM"
+          "current_key": "AIzaSyBiZ_s4XKJp9yw6cAkOPAloXwB6_5XcBwU"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "559505141358-d208jt7jtp73bfkgagih4f4buj2ufdv0.apps.googleusercontent.com",
+              "client_id": "617825253260-qvkp2bbg8q6uibb8aou8k336q2h2u4a9.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
