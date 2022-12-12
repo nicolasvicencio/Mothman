@@ -34,4 +34,10 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(getApplicationContext(),"El usuario o contraseña no son válidos", Toast.LENGTH_SHORT).show();
         }
     }
+
+
+    public void register(View v){
+        Intent i = new Intent(this, Register.class);
+        startActivity(i);
+    }
 }
