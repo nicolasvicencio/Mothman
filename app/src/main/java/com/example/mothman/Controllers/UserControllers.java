@@ -1,48 +1,13 @@
 package com.example.mothman.Controllers;
 
 import com.example.mothman.Models.User;
+import com.google.firebase.FirebaseApp;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
+import java.util.UUID;
 
 public class UserControllers {
-    private String id;
-    private String username;
-    private String password;
-    private ArrayList<User> listUsers;
 
-    public UserControllers(String id, String username, String password) {
-        this.id = id;
-        this.username = username;
-        this.password = password;
-    }
-
-
-    public void addUser(String username, String password){
-
-    }
-
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
 }

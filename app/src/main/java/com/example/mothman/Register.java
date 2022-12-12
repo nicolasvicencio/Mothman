@@ -30,22 +30,21 @@ public class Register extends AppCompatActivity {
         inputPassword = findViewById(R.id.inputPassword);
         inputPassword2 = findViewById(R.id.inputPassword2);
         startFirebase();
-
     }
 
     public void startFirebase() {
         FirebaseApp.initializeApp(this);
         firebaseDatabase = FirebaseDatabase.getInstance();
         databaseReference = firebaseDatabase.getReference();
-
     }
     public void createNewUser(View v){
         User newUser = new User();
-        newUser.setId(UUID.randomUUID().toString());
+        String id = UUID.randomUUID().toString();
+        newUser.setId(id);
         newUser.setUsername(inputUsername.getText().toString());
         newUser.setPassword(inputPassword.getText().toString());
 
-        databaseReference.child("User").setValue(newUser);
+        databaseReference.child("User").child(id).setValue(newUser);
         Intent i = new Intent(this, MainActivity.class);
         startActivity(i);
 
