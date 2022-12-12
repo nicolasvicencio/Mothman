@@ -57,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
                         }
                     }
                 }catch (Exception e) {
+                    Toast.makeText(MainActivity.this, "Credenciales incorrectas, por favor intente nuevamente", Toast.LENGTH_SHORT).show();
                     etUsuario.setText("");
                     etContrasena.setText("");
                 }
