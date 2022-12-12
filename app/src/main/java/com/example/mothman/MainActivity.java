@@ -11,16 +11,14 @@ import android.widget.Toast;
 import com.example.mothman.Services.FBConnection;
 
 public class MainActivity extends AppCompatActivity {
-
     private EditText etUsuario;
     private EditText etContrasena;
-    private FBConnection fbConnection;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        fbConnection.startFirebase(this);
         etUsuario = findViewById(R.id.etUsuario);
         etContrasena = findViewById(R.id.etContrasena);
     }
