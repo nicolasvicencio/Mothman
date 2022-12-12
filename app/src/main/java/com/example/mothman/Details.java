@@ -29,8 +29,7 @@ public class Details extends AppCompatActivity {
         tvOutput.setText(bundle.getString("sensorOutput"));
     }
     public void volver (View v){
-        Intent i = new Intent(this, ListData.class);
-        startActivity(i);
+        finish();
         //comentario
     }
 }

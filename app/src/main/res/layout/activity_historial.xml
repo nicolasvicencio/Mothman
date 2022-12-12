@@ -7,50 +7,53 @@
     tools:context=".Historial">
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btnInclinacion"
         android:layout_width="247dp"
         android:layout_height="51dp"
-        android:layout_marginStart="82dp"
         android:layout_marginTop="103dp"
         android:angle="0"
         android:backgroundTint="#3F51B5"
+        android:onClick="btnInclinacion"
         android:text="Sensor inclinación"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnCo2"
         android:layout_width="247dp"
         android:layout_height="51dp"
-        android:layout_marginStart="82dp"
         android:layout_marginTop="47dp"
         android:angle="0"
         android:backgroundTint="#00ff0f"
+        android:onClick="btnCo2"
         android:text="Sensor CO2"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4" />
+        app:layout_constraintTop_toBottomOf="@+id/btnInclinacion" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnTemperatura"
         android:layout_width="247dp"
         android:layout_height="51dp"
-        android:layout_marginStart="82dp"
         android:layout_marginTop="49dp"
         android:angle="0"
         android:backgroundTint="#ff0051"
+        android:onClick="btnTemperatura"
         android:text="Sensor Temperatura"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
+        app:layout_constraintTop_toBottomOf="@+id/btnCo2" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="121dp"
         android:layout_marginTop="47dp"
         android:fontFamily="sans-serif-condensed-light"
         android:text="Historial"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -60,7 +63,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="82dp"
         android:layout_marginTop="170dp"
+        android:onClick="volver"
         android:text="Volver"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@+id/btnTemperatura" />
 </androidx.constraintlayout.widget.ConstraintLayout>

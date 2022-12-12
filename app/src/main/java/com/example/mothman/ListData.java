@@ -75,6 +75,17 @@ public class ListData extends AppCompatActivity {
             return item;
         }
     }
+
+    public void verHistorial(View v) {
+        Intent i = new Intent(this, Historial.class);
+        //i.putExtra("miDato", etV1.getText().toString());
+        startActivity(i);
+    }
+
+    public void volver (View v){
+        finish();
+        //comentario
+    }
 }
 
 
