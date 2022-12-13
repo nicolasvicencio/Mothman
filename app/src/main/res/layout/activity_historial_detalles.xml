@@ -6,4 +6,25 @@
     android:layout_height="match_parent"
     tools:context=".HistorialDetalles">
 
+    <TextView
+        android:id="@+id/tvTipoHistorial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="36dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="567dp"
+        android:onClick="volver"
+        android:text="Volver"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTipoHistorial" />
 </androidx.constraintlayout.widget.ConstraintLayout>

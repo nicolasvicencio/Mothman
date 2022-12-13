@@ -37,6 +37,7 @@ public class Register extends AppCompatActivity {
         firebaseDatabase = FirebaseDatabase.getInstance();
         databaseReference = firebaseDatabase.getReference();
     }
+
     public void createNewUser(View v){
         User newUser = new User();
         String id = UUID.randomUUID().toString();
@@ -47,7 +48,5 @@ public class Register extends AppCompatActivity {
         databaseReference.child("User").child(id).setValue(newUser);
         Intent i = new Intent(this, MainActivity.class);
         startActivity(i);
-
-
     }
 }

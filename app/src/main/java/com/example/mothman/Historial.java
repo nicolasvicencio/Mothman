@@ -34,6 +34,5 @@ public class Historial extends AppCompatActivity {
 
     public void volver (View v){
         finish();
-        //comentario
     }
 }
