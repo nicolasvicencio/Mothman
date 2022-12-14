@@ -58,28 +58,21 @@
         android:id="@+id/button6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="93dp"
-        android:layout_marginEnd="68dp"
-        android:layout_marginBottom="141dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="208dp"
         android:onClick="modifyPassword"
         android:text="Enviar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputNewPassword2"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintStart_toEndOf="@+id/button8"
+        app:layout_constraintTop_toBottomOf="@+id/inputNewPassword2" />
 
     <Button
         android:id="@+id/button8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="83dp"
-        android:layout_marginTop="93dp"
-        android:layout_marginEnd="91dp"
-        android:layout_marginBottom="141dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="208dp"
         android:onClick="goBack"
         android:text="Volver"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inputNewPassword2" />
 
