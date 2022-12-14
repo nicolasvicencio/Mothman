@@ -16,19 +16,19 @@ public class Historial extends AppCompatActivity {
 
     public void btnInclinacion(View v) {
         Intent i = new Intent(this, HistorialDetalles.class);
-        //i.putExtra("miDato", etV1.getText().toString());
+        i.putExtra("miDato", "Historial Temblores");
         startActivity(i);
     }
 
     public void btnCo2(View v) {
         Intent i = new Intent(this, HistorialDetalles.class);
-        //i.putExtra("miDato", etV1.getText().toString());
+        i.putExtra("miDato", "Historial CO2");
         startActivity(i);
     }
 
     public void btnTemperatura(View v) {
         Intent i = new Intent(this, HistorialDetalles.class);
-        //i.putExtra("miDato", etV1.getText().toString());
+        i.putExtra("miDato", "Historial Temperatura");
         startActivity(i);
     }
 
