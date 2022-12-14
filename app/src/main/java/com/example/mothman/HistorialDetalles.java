@@ -71,15 +71,11 @@ public class HistorialDetalles extends AppCompatActivity {
                 for (DataSnapshot i : dataSnapshot.getChildren()) {
                     Historic h = i.getValue(Historic.class);
 
-                    System.out.println("Detector de errores: ");
-
-                    //HistoricController.fillSensorList(h.getId(), h.getDate(), h.getDescription());
                     HistoricController.fillSensorList(h.getId(), h.getDate(), h.getDescription());
                     AdapterHistoric adapter = new AdapterHistoric(HistorialDetalles.this);
 
                     historicList = (ListView) findViewById(R.id.listViewData);
                     historicList.setAdapter(adapter);
-
                 }
             }
             @Override
@@ -116,6 +112,7 @@ public class HistorialDetalles extends AppCompatActivity {
     }
 
     public void volver (View v){
+        HistoricController.findAll().clear();
         finish();
     }
 }
