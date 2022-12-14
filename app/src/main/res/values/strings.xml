@@ -2,4 +2,6 @@
     <string name="app_name">Mothman</string>
     <string name="sensores">Sensores</string>
     <string name="sensoresTitle">Sensores</string>
+    <string name="editar_perfil">Editar Perfil</string>
+    <string name="cerrar_sesion">Cerrar Sesion</string>
 </resources>

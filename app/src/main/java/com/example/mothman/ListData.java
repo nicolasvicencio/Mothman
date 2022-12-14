@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -45,6 +47,31 @@ public class ListData extends AppCompatActivity {
             }
         });
     }
+
+    public boolean onCreateOptionsMenu(Menu menu){
+        getMenuInflater().inflate(R.menu.topbar, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    public boolean onOptionsItemSelected(MenuItem item){
+        int id = item.getItemId();
+        switch (id){
+            case R.id.op1:
+                Bundle bundle = getIntent().getExtras();
+                currentUsername = bundle.getString("username");
+                Intent i = new Intent(this, ModifyUser.class);
+                i.putExtra("username", currentUsername );
+                startActivity(i);
+                break;
+            case R.id.op2:
+                Intent in = new Intent(this, MainActivity.class);
+                startActivity(in);
+                break;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+
     public void sensorDetail(View v, String type, String name, String output) {
         Intent i = new Intent(this, Details.class);
         i.putExtra("sensorName", type);
@@ -85,7 +112,8 @@ public class ListData extends AppCompatActivity {
 
     public void volver (View v){
         finish();
-        //comentario
+        Intent i = new Intent(this, MainActivity.class);
+        startActivity(i);
     }
     public void modifyUser(View v){
         Bundle bundle = getIntent().getExtras();
