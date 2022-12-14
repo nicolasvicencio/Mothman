@@ -42,7 +42,6 @@ public class ListData extends AppCompatActivity {
                 String type = SensorController.findAll().get(i).getType();
                 String name = SensorController.findAll().get(i).getName();
                 String output = SensorController.findAll().get(i).getOutput();
-
                 sensorDetail(view, type, name, output);
             }
         });
@@ -71,13 +70,11 @@ public class ListData extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-
     public void sensorDetail(View v, String type, String name, String output) {
         Intent i = new Intent(this, Details.class);
         i.putExtra("sensorName", type);
         i.putExtra("sensorType", name);
         i.putExtra("sensorOutput", output);
-
         startActivity(i);
     }
 
@@ -110,19 +107,6 @@ public class ListData extends AppCompatActivity {
         startActivity(i);
     }
 
-    public void volver (View v){
-        finish();
-        Intent i = new Intent(this, MainActivity.class);
-        startActivity(i);
-    }
-    public void modifyUser(View v){
-        Bundle bundle = getIntent().getExtras();
-        currentUsername = bundle.getString("username");
-
-        Intent i = new Intent(this, ModifyUser.class);
-        i.putExtra("username", currentUsername );
-        startActivity(i);
-    }
 }
 
 
