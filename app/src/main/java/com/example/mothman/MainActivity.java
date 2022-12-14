@@ -72,16 +72,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //if ("root".equals(etUsuario.getText().toString()) && "root".equals(etContrasena.getText().toString())) {
-          //  Intent i = new Intent(this, ListData.class);
-
-            //i.putExtra("miDato", etV1.getText().toString());
-
-          //  startActivity(i);
-       // } else {
-      //      Toast.makeText(getApplicationContext(),"El usuario o contraseña no son válidos", Toast.LENGTH_SHORT).show();
-      //  }
-
     }
 
     public void register(View v){

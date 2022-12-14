@@ -66,6 +66,7 @@
         android:onClick="enviar"
         android:text="Ingresar"
         android:textSize="16sp"
+        android:backgroundTint="#1a819e"
         app:layout_constraintEnd_toStartOf="@+id/button5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etContrasena" />
@@ -79,6 +80,7 @@
         android:onClick="register"
         android:text="Registrar"
         android:textSize="16sp"
+        android:backgroundTint="#1a819e"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button"
         app:layout_constraintTop_toBottomOf="@+id/etContrasena" />

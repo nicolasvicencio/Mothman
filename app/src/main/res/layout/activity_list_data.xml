@@ -13,6 +13,7 @@
         android:layout_marginTop="136dp"
         android:onClick="verHistorial"
         android:text="Historial"
+        android:backgroundTint="#1a819e"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/listViewData" />

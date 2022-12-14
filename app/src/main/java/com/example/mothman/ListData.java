@@ -106,7 +106,6 @@ public class ListData extends AppCompatActivity {
         //i.putExtra("miDato", etV1.getText().toString());
         startActivity(i);
     }
-
 }
 
 
