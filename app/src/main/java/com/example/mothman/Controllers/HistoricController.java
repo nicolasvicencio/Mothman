@@ -12,7 +12,7 @@ public class HistoricController {
         try{
             Historic historic = new Historic(id, date ,description);
             listHistoric.add(historic);
-            return "Sensor agregado";
+            return "Historial agregado";
         }catch(Exception e){
             return "Error: "+e.getMessage();
         }
