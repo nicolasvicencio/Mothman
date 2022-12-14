@@ -59,15 +59,15 @@ public class ModifyUser extends AppCompatActivity {
                 for (DataSnapshot el : snapshot.getChildren()) {
                     User user = el.getValue(User.class);
                     if(user.getUsername().equals(currentUsername)){
-                        if(user.getPassword().equals(newPassword.getText().toString())){
-                            Toast.makeText(ModifyUser.this, "La contraseña que ingresaste no puede ser igual a la anterior", Toast.LENGTH_SHORT).show();
-                            return;
-                       }
-                        if (user.getPassword().equals(currentPassword.getText().toString())){
-                            Toast.makeText(ModifyUser.this, "Contraseña incorrecta para el usuario " + currentUsername, Toast.LENGTH_SHORT).show();
-                            return;
-                        }
                         if (user.getPassword().equals(currentPassword.getText().toString())) {
+                            if(user.getPassword().equals(newPassword.getText().toString())){
+                                Toast.makeText(ModifyUser.this, "La contraseña que ingresaste no puede ser igual a la anterior" + newPassword.getText().toString(), Toast.LENGTH_SHORT).show();
+                                return;
+                            }
+                            if(!user.getPassword().equals(currentPassword.getText().toString())){
+                                Toast.makeText(ModifyUser.this, "Contraseña incorrecta para el usuario " + currentUsername, Toast.LENGTH_SHORT).show();
+                                return;
+                            }
                             Map<String, Object> userMap = new HashMap<>();
                             userMap.put("password", newPassword.getText().toString());
                             userMap.put("id", user.getId());
