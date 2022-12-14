@@ -51,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
                         if (user.getUsername().equals(etUsuario.getText().toString())) {
                             if (user.getPassword().equals(etContrasena.getText().toString())) {
                                 Intent i = new Intent(MainActivity.this, ListData.class);
+                                i.putExtra("username", user.getUsername());
                                 startActivity(i);
                                 return;
                             }
@@ -84,4 +85,6 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(this, Register.class);
         startActivity(i);
     }
+
+
 }

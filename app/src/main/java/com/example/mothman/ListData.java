@@ -21,6 +21,7 @@ import java.util.ArrayList;
 public class ListData extends AppCompatActivity {
     private ListView sensorList;
     private ArrayList<String> sensors;
+    private String currentUsername;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -85,6 +86,14 @@ public class ListData extends AppCompatActivity {
     public void volver (View v){
         finish();
         //comentario
+    }
+    public void modifyUser(View v){
+        Bundle bundle = getIntent().getExtras();
+        currentUsername = bundle.getString("username");
+
+        Intent i = new Intent(this, ModifyUser.class);
+        i.putExtra("username", currentUsername );
+        startActivity(i);
     }
 }
 
