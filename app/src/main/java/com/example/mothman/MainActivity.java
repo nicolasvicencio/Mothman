@@ -54,10 +54,12 @@ public class MainActivity extends AppCompatActivity {
                                 i.putExtra("username", user.getUsername());
                                 startActivity(i);
                                 return;
+                            }else {
+                                Toast.makeText(MainActivity.this, "Credenciales invalidas", Toast.LENGTH_SHORT).show();
+                                etUsuario.setText("");
+                                etContrasena.setText("");
+                                return;
                             }
-                        }else
-                        {
-
                         }
                     }
                 }catch (Exception e) {
