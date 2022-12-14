@@ -26,6 +26,7 @@
         android:ems="10"
         android:hint="Ingrese su contraseña"
         android:inputType="textPassword"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
@@ -38,6 +39,7 @@
         android:ems="10"
         android:hint="Contraseña nueva"
         android:inputType="textPassword"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inputCurrentPassword" />
@@ -50,6 +52,7 @@
         android:ems="10"
         android:hint="Repita Contraseña"
         android:inputType="textPassword"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inputNewPassword" />
@@ -58,10 +61,11 @@
         android:id="@+id/button6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="112dp"
-        android:layout_marginTop="208dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="184dp"
         android:onClick="modifyPassword"
         android:text="Enviar"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button8"
         app:layout_constraintTop_toBottomOf="@+id/inputNewPassword2" />
 
@@ -69,10 +73,11 @@
         android:id="@+id/button8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="168dp"
-        android:layout_marginTop="208dp"
+        android:layout_marginTop="184dp"
+        android:layout_marginEnd="30dp"
         android:onClick="goBack"
         android:text="Volver"
+        app:layout_constraintEnd_toStartOf="@+id/button6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inputNewPassword2" />
 
