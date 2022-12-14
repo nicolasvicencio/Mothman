@@ -97,4 +97,9 @@ public class ModifyUser extends AppCompatActivity {
         firebaseDatabase = FirebaseDatabase.getInstance();
         databaseReference = firebaseDatabase.getReference();
     }
+
+    public void goBack(View v){
+        Intent i = new Intent(this, ListData.class);
+        startActivity(i);
+    }
 }
