@@ -61,8 +61,8 @@ public class HistorialDetalles extends AppCompatActivity {
             tituloHistorial = "Historic/temperatura";
         }
 
-        if (tvTipoHistorial.getText().equals("Historial CO2")) {
-            tituloHistorial = "Historic/co2";
+        if (tvTipoHistorial.getText().equals("Historial Humedad")) {
+            tituloHistorial = "Historic/humedad";
         }
 
         databaseReference.child(tituloHistorial).addValueEventListener(new ValueEventListener() {
